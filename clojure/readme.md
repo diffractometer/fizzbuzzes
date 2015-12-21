@@ -1,4 +1,4 @@
-do `lein run` from command line to run
+run `lein run` inside of fizzbuzz folder
 
 using Lein boilerplate but in the interest of clarity it's here: 
 
