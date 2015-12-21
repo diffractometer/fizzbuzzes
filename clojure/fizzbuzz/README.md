@@ -1,14 +1,18 @@
-# fizzbuzz
+```
+(ns fizzbuzz.core)
 
-A Clojure library designed to ... well, that part is up to you.
+(defn fizzbuzz 
+  [start finish] 
+  (println 
+  (map (fn [n]
+	(cond
+		(zero? (mod n 15)) "FizzBuzz"
+		(zero? (mod n 3)) "Fizz"
+		(zero? (mod n 5)) "Buzz"
+		:else n))
+	(range start finish))))
 
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2015 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+(defn -main 
+  []
+  (fizzbuzz 1 100)) 
+```
